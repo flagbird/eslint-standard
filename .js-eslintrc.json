@@ -1,0 +1,7 @@
+{
+    "extends": "./js-eslint.json",
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "root": true
+}

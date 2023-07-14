@@ -1,0 +1,106 @@
+{
+  "plugins": [
+    "eslint-plugin-jsdoc",
+    "eslint-plugin-import"
+  ],
+  "rules": {
+    "arrow-body-style": "error",
+    "brace-style": [
+      "error",
+      "1tbs"
+    ],
+    "constructor-super": "error",
+    "curly": "error",
+    "dot-notation": "off",
+    "eol-last": "error",
+    "eqeqeq": [
+      "error",
+      "smart"
+    ],
+    "guard-for-in": "error",
+    "id-denylist": "error",
+    "id-match": "error",
+    "import/no-deprecated": "warn",
+    "indent": "off",
+    "jsdoc/no-types": "error",
+    "max-len": [
+      "error",
+      {
+        "code": 140
+      }
+    ],
+    "no-bitwise": "error",
+    "no-caller": "error",
+    "no-console": [
+      "error",
+      {
+        "allow": [
+          "log",
+          "warn",
+          "dir",
+          "timeLog",
+          "assert",
+          "clear",
+          "count",
+          "countReset",
+          "group",
+          "groupEnd",
+          "table",
+          "dirxml",
+          "error",
+          "groupCollapsed",
+          "Console",
+          "profile",
+          "profileEnd",
+          "timeStamp",
+          "context"
+        ]
+      }
+    ],
+    "no-debugger": "error",
+    "no-empty": "off",
+    "no-empty-function": "off",
+    "no-eval": "error",
+    "no-fallthrough": "error",
+    "no-irregular-whitespace": "error",
+    "no-new-wrappers": "error",
+    "no-restricted-imports": [
+      "error",
+      "rxjs/Rx"
+    ],
+    "no-shadow": "off",
+    "no-throw-literal": "error",
+    "no-trailing-spaces": "error",
+    "no-undef-init": "error",
+    "no-underscore-dangle": "off",
+    "no-unused-expressions": "off",
+    "no-unused-labels": "error",
+    "no-use-before-define": "off",
+    "no-var": "error",
+    "one-var": [
+      "error",
+      "never"
+    ],
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "return"
+      }
+    ],
+    "prefer-const": "error",
+    "quotes": "off",
+    "radix": "error",
+    "semi": "off",
+    "spaced-comment": [
+      "error",
+      "always",
+      {
+        "markers": [
+          "/"
+        ]
+      }
+    ]
+  }
+}
