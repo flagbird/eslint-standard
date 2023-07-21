@@ -1,5 +1,5 @@
 {
-  "name": "@flagbit/eslint-config",
+  "name": "@flagbit/eslint-standard",
   "version": "0.0.1",
   "license": "MIT",
   "publishConfig": {
