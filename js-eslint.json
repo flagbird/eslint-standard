@@ -4,14 +4,14 @@
     "eslint-plugin-import"
   ],
   "rules": {
-    "arrow-body-style": "error",
+    "arrow-body-style": ["error", "never"],
     "brace-style": [
       "error",
       "1tbs"
     ],
     "constructor-super": "error",
     "curly": "error",
-    "dot-notation": "off",
+    "dot-notation": "error",
     "eol-last": "error",
     "eqeqeq": [
       "error",
@@ -21,7 +21,7 @@
     "id-denylist": "error",
     "id-match": "error",
     "import/no-deprecated": "warn",
-    "indent": "off",
+    "indent": ["error", 2],
     "jsdoc/check-types": "error",
     "max-len": [
       "error",
@@ -44,24 +44,40 @@
       }
     ],
     "no-debugger": "error",
-    "no-empty": "off",
-    "no-empty-function": "off",
+    "no-empty": "error",
+    "no-empty-function": "error",
     "no-eval": "error",
     "no-fallthrough": "error",
-    "no-irregular-whitespace": "error",
+    "no-irregular-whitespace": [
+      "error",
+      {
+        "skipComments": true
+      }
+    ],
     "no-new-wrappers": "error",
     "no-restricted-imports": [
       "error",
-      "rxjs/Rx"
+      {
+        "paths": [
+          "rxjs/Rx"
+        ]
+      }
     ],
-    "no-shadow": "off",
+    "no-shadow": "error",
     "no-throw-literal": "error",
     "no-trailing-spaces": "error",
     "no-undef-init": "error",
     "no-underscore-dangle": "off",
-    "no-unused-expressions": "off",
+    "no-unused-expressions": "error",
     "no-unused-labels": "error",
-    "no-use-before-define": "off",
+    "no-use-before-define": [
+      "error", {
+        "functions": false,
+        "classes": false,
+        "variables": true,
+        "allowNamedExports": true
+      }
+    ],
     "no-var": "error",
     "one-var": [
       "error",
@@ -76,17 +92,13 @@
       }
     ],
     "prefer-const": "error",
-    "quotes": "off",
+    "quotes": ["error", "single"],
     "radix": "error",
-    "semi": "off",
+    "semi": "error",
     "spaced-comment": [
       "error",
-      "always",
-      {
-        "markers": [
-          "/"
-        ]
-      }
-    ]
+      "always"
+    ],
+    "camelcase": "error"
   }
 }
