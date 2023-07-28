@@ -23,3 +23,6 @@ jobs:
 
       - name: "Check typescript coding style"
         run: "yarn eslint -c .ts-eslintrc.json files/**/*.ts"
+
+      - name: "Check JavaScript coding style"
+        run: "yarn eslint -c .js-eslintrc.json files/**/*.js"

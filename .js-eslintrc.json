@@ -1,7 +1,8 @@
 {
     "extends": "./js-eslint.json",
     "parserOptions": {
-        "sourceType": "module"
+        "sourceType": "module",
+        "ecmaVersion": "2015"
     },
     "root": true
 }
