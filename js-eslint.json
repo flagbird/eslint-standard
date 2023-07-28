@@ -22,7 +22,7 @@
     "id-match": "error",
     "import/no-deprecated": "warn",
     "indent": "off",
-    "jsdoc/no-types": "error",
+    "jsdoc/check-types": "error",
     "max-len": [
       "error",
       {
@@ -35,25 +35,11 @@
       "error",
       {
         "allow": [
-          "log",
-          "warn",
-          "dir",
-          "timeLog",
-          "assert",
-          "clear",
-          "count",
-          "countReset",
-          "group",
-          "groupEnd",
-          "table",
-          "dirxml",
-          "error",
-          "groupCollapsed",
-          "Console",
-          "profile",
-          "profileEnd",
-          "timeStamp",
-          "context"
+          "debug",
+          "info",
+          "time",
+          "timeEnd",
+          "trace"
         ]
       }
     ],
