@@ -1,4 +1,4 @@
-name: Coding Style Check
+name: "Coding Style Check"
 
 on:
   push:
@@ -8,10 +8,18 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: "ubuntu-latest"
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: "actions/checkout@v3"
 
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: "Installation of node"
+        uses: "actions/setup-node@v2"
+        with:
+          node-version: "16.16.0"
+
+      - name: "yarn install"
+        run: "yarn install"
+
+      - name: "Check typescript coding style"
+        run: "yarn eslint -c .ts-eslintrc.json files/**/*.ts"
